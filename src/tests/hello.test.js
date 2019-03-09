@@ -3,7 +3,7 @@ import React from 'react';
 describe('JSX', () => {
   it('Calls React.createElement', () => {
     const createElementSpy = jest.spyOn(React, 'createElement');
-    <ul>Hello, JSX!</ul>;
+    <h1>Hello, JSX!</h1>;
     expect(createElementSpy).toHaveBeenCalledWith('h1', null, 'Hello, JSX!');
   });
 });
