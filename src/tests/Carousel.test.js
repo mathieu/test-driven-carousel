@@ -69,6 +69,7 @@ describe('Carousel', () => {
       expect(wrapper.state('slideIndex')).toBe(2);
     });
   });
+
   describe('with the last slide selected', () => {
     it('wraps `slideIndex` to the min value when the Next button is clicked', () => {
       wrapper.setState({ slideIndex: slides.length - 1 });
